@@ -1,7 +1,7 @@
 project('thesaurus_gtk', ['c'])
 
 thesaurus_gtk_dep = [
-  dependency('gtk+-3.0')
+  dependency('gtk+-3.0', 'sqlite3')
 ]
 
 executable('thesaurus_gtk',
