@@ -20,8 +20,8 @@ LINK_DIRECTORIES(${SQLITE_LIBRARY_DIRS})
 ADD_DEFINITIONS(${GTK3_CFLAGS_OTHER})
 
 # Add an executable compiled from hello.c
-SET(SOURCE_FILES src/main.c src/lit_entry.cpp src/test_sql.cpp src/create_application.c src/test_cpp_extern.cpp)
-ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCE_FILES} include/lit_entry.h)
+SET(SOURCE_FILES src/main.c src/model/LitEntry.cpp src/test_sql.cpp src/create_application.c src/test_cpp_extern.cpp)
+ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCE_FILES} src/model/LitEntry.h)
 
 # Link the target to the GTK+ libraries
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${GTK3_LIBRARIES} ${SQLITE_LIBRARIES})
