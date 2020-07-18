@@ -1,3 +1,5 @@
+#include "../include/sqlite_orm.h"
+
 
 extern void test_extern(char* string);
 
