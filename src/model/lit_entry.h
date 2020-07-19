@@ -2,8 +2,8 @@
 // Created by mikhail on 15/07/2020.
 //
 
-#ifndef THESAURUS_GTK_LITENTRY_H
-#define THESAURUS_GTK_LITENTRY_H
+#ifndef THESAURUS_GTK_LIT_ENTRY_H
+#define THESAURUS_GTK_LIT_ENTRY_H
 
 
 #include <string>
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //THESAURUS_GTK_LITENTRY_H
+#endif //THESAURUS_GTK_LIT_ENTRY_H

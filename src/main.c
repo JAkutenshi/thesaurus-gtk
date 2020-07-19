@@ -1,6 +1,3 @@
-#include "../include/sqlite_orm.h"
-
-
 extern void test_extern(char* string);
 
 extern int some_cpp_func( int magic_num );
