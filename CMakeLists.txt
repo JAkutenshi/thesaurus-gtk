@@ -12,6 +12,7 @@ PKG_CHECK_MODULES(SQLITE REQUIRED sqlite3)
 # and to the linker where to look for libraries
 INCLUDE_DIRECTORIES(${GTK3_INCLUDE_DIRS})
 LINK_DIRECTORIES(${GTK3_LIBRARY_DIRS})
+ADD_LINK_OPTIONS(-rdynamic)
 
 INCLUDE_DIRECTORIES(${SQLITE_INCLUDE_DIRS})
 LINK_DIRECTORIES(${SQLITE_LIBRARY_DIRS})
@@ -20,7 +21,7 @@ LINK_DIRECTORIES(${SQLITE_LIBRARY_DIRS})
 ADD_DEFINITIONS(${GTK3_CFLAGS_OTHER})
 
 # Add an executable compiled from hello.c
-SET(SOURCE_FILES src/main.c src/model/lit_entry.cpp src/test_sql.cpp src/create_application.c src/test_cpp_extern.cpp src/model/book.cpp src/model/book.h src/model/person.cpp src/model/person.h src/model/article.cpp src/model/article.h)
+SET(SOURCE_FILES src/main.c src/config.h)
 ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCE_FILES} src/model/lit_entry.h)
 
 # Link the target to the GTK+ libraries

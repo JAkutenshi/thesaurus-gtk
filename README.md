@@ -1,8 +1,23 @@
 # Thesaurus - literature cataloging application
 
+## (ToDo) ver. 0.1 features
+
+- Supporting BibTeX entries below:
+    - Article
+    - PhDthesis
+    - Book
+    - InBook
+    - Proceedings
+    - InProceedings
+ - CRUD entries into SQLite DB
+ - Open entry's file (if binded) in mime pdf viewer
+ - Notes for an entry
+ - Search in notes and bibTeX fields
+ - Export entry in bibTeX format
+
 ## ToDo
 
-- [ ] Make proper build system (CMake ?)
+- [x] Make proper build system (CMake ?)
 - [ ] Make Use-Case diagram
 - [ ] Make mockup
 - [ ] Transfer mockup to gui.ui
